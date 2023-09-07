@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tárhely Számító Feladat</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div>
+        <label>Kapacitás: </label><input type="number" name="tarhely" id="tarhely">
+        <select id="kapacitasSelect">
+            <option value="Mb">Mb</option>
+            <option value="Gb">Gb</option>
+            <option value="Tb">Tb</option>
+        </select>
+        <br>
+        <label>Sebesség: </label> <input type="range" value="2500" name="csuszka" min="20" max="5000" id="csuszka"
+            oninput="csuszka()"><label id="sebessegSzam">2500</label>
+        <select id="sebessegSelect">
+            <option value="Kbps">Kbps</option>
+            <option value="Mbps">Mbps</option>
+            <option value="Gbps">Gbps</option>
+        </select>
+        <br><br>
+        <input type="submit" value="Beküldés" onclick="szamol()">
+        <br><br>
+        <label id="eredmeny"></label>
+    </div>
+    <script src="scipt.js"></script>
+</body>
+
+</html>
